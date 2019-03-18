@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+  <head>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="./assets/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+
+  <body class="background">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="display-1 text-center p-4">Haunted Trivia Game</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 game-panel m-4 p-4">
+          <h3>How well do you know the classics?</h3>
+          <p>Welcome to Horror Movie Trivia Challenge! This game will test your knowledge of Horror movies!
+          Submit your name in the box below and we'll add you to the high score list!</p>
+
+        <form>
+          <div class="form-row">
+            <div class="col-auto">
+              <input type="text" class="form-control" placeholder="Your Name" name="user-name">
+                <button class="btn btn-primary mt-1 user-name">Submit</button>
+                <button class="btn btn-primary start-quiz mt-1" type="button">Click to Begin!</button>
+            </div>
+          </div>
+        </form>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12 m-4 p-4 question-panel">
+          <h3 id="question-head"></h3>
+            <h5>Time remaining to answer: </h5><h5 id="qTimer">10</h5>
+              <p id="question-body"></p>
+                <button class="answerBtn" type="button">placeholder</button>
+                <button class="answerBtn" type="button">placeholder</button>
+                <button class="answerBtn" type="button">placeholder</button>
+                <button class="answerBtn" type="button">placeholder</button>
+                  <div class="alert alert-danger alert-dismissible fade show hidden mt-2" role="alert">
+                  <strong>Time's up!</strong> The correct answer is Count Orlok!
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="alert alert-success alert-dismissible fade show hidden mt-2 q1" role="alert">
+                            <strong>That's correct!</strong> You know your vampires!
+                              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                  </div>
+         </div>
+       </div>
+
+    </div>
+
+    <script src="assets/game.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <a href="https://www.freepik.com/free-photos-vectors/background">Background vector created by freepik - www.freepik.com</a>
+  </body>
+
+</html>
