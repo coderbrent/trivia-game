@@ -12,7 +12,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <div class="display-1 text-center p-4">Haunted Trivia Game</div>
+          <div class="display-2 text-center p-4 white-heavy">Classic Horror Movie Trivia</div>
         </div>
       </div>
       <div class="row">
@@ -24,7 +24,7 @@
         <form>
           <div class="form-row">
             <div class="col-auto">
-              <input type="text" class="form-control" placeholder="Your Name" name="user-name">
+              <input type="text" class="form-control" placeholder="Your Name">
                 <button class="btn btn-primary mt-1 user-name">Submit</button>
                 <button class="btn btn-primary start-quiz mt-1" type="button">Click to Begin!</button>
             </div>
@@ -34,26 +34,19 @@
       </div>
 
       <div class="row">
-        <div class="col-lg-12 m-4 p-4 question-panel">
-          <h3 id="question-head"></h3>
-            <h5>Time remaining to answer: </h5><h5 id="qTimer">10</h5>
-              <p id="question-body"></p>
-                <button class="answerBtn" type="button">placeholder</button>
-                <button class="answerBtn" type="button">placeholder</button>
-                <button class="answerBtn" type="button">placeholder</button>
-                <button class="answerBtn" type="button">placeholder</button>
-                  <div class="alert alert-danger alert-dismissible fade show hidden mt-2" role="alert">
-                  <strong>Time's up!</strong> The correct answer is Count Orlok!
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                    <div class="alert alert-success alert-dismissible fade show hidden mt-2 q1" role="alert">
-                            <strong>That's correct!</strong> You know your vampires!
-                              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                              </button>
-                  </div>
+        <div class="col-lg-12 m-4 p-4" id="question-panel">
+          <h3 id="questList"></h3>
+            <h5>Time remaining to answer: </h5><h5 id="qTimer">15</h5>
+              <div id="answerPanel">
+              </div>
+
+          <div class="alert alert-danger alert-dismissible fade show hidden m-2 correctAnswer" role="alert">
+          <strong>Time's up!</strong> The correct answer is <p id="correct-answer"></p>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
          </div>
+
        </div>
 
     </div>
