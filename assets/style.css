@@ -60,3 +60,7 @@ a {
     color: white;
     font-weight: bolder;
 }
+
+#questList {
+    color: lawngreen;
+}

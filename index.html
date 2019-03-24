@@ -12,21 +12,18 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <div class="display-2 text-center p-4 white-heavy">Classic Horror Movie Trivia</div>
+          <div class="display-4 text-center p-4 white-heavy">Classic Horror Movie Trivia</div>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-12 game-panel m-4 p-4">
           <h3>How well do you know the classics?</h3>
-          <p>Welcome to Horror Movie Trivia Challenge! This game will test your knowledge of Horror movies!
-          Submit your name in the box below and we'll add you to the high score list!</p>
+          <p>Welcome to Classic Horror Movie Trivia Challenge! This game will test your knowledge of Horror movies!</p>
 
-        <form>
-          <div class="form-row">
+          <div class="container">
+          <div class="row">
             <div class="col-auto">
-              <input type="text" class="form-control" placeholder="Your Name">
-                <button class="btn btn-primary mt-1 user-name">Submit</button>
-                <button class="btn btn-primary start-quiz mt-1" type="button">Click to Begin!</button>
+              <button class="btn btn-primary start-quiz mt-1" type="button">Click to Begin!</button>
             </div>
           </div>
         </form>
@@ -36,23 +33,22 @@
       <div class="row">
         <div class="col-lg-12 m-4 p-4" id="question-panel">
           <h3 id="questList"></h3>
-            <h5>Time remaining to answer: </h5><h5 id="qTimer">15</h5>
-              <div id="answerPanel">
-              </div>
+            <h5>Time remaining to answer: </h5><h5 id="qTimer"></h5>
+              <div id="answerPanel"></div>
 
           <div class="alert alert-danger alert-dismissible fade show hidden m-2 correctAnswer" role="alert">
-          <strong>Time's up!</strong> The correct answer is <p id="correct-answer"></p>
+          <strong>Time's up!</strong> The correct answer is: <p id="correct-answer"></p>
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
          </div>
 
        </div>
-
+       </div>
     </div>
+  </div>
 
     <script src="assets/game.js"></script>
-    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
